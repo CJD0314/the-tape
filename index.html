@@ -3,13 +3,23 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>The Tape</title>
-<link rel="stylesheet" href="tape.css?v=11"/>
+<link rel="stylesheet" href="tape.css?v=12"/>
 <style>
 .meaning{color:#93a3b5;font-size:12px;font-weight:600;display:block;margin-top:4px}
 .next{background:#121820;border:1px solid #2a3644;border-radius:12px;padding:14px 16px;margin:16px 0}
 .next b{display:block;color:#e8b423;font-size:12px;letter-spacing:.1em;margin-bottom:6px}
 .why{color:#93a3b5;font-size:14px;margin:4px 0 14px}
 .hits{color:#e8b423;font-size:13px;font-weight:800;letter-spacing:.04em;margin:8px 0 0}
+.cal{width:100%;border-collapse:collapse;margin:8px 0 14px;table-layout:fixed}
+.cal th{color:#93a3b5;font-size:11px;letter-spacing:.08em;font-weight:800;padding:6px 0}
+.cal td{text-align:center;padding:6px 0}
+.cal button{background:#121820;border:1px solid #2a3644;color:#e8eef6;width:36px;height:36px;border-radius:8px;font-weight:800;cursor:pointer}
+.cal button.on{background:#e8b423;color:#111;border-color:#e8b423}
+.cal button.muted{opacity:.35;cursor:default}
+.cal .empty{height:36px}
+#rev-empty{display:none}
+#rev-empty.show{display:block}
+#rev-22.hide{display:none}
 </style>
 </head>
 <body>
@@ -33,44 +43,111 @@ No buy. Oil’s fifth down day and JPM’s drop are already in the price. Cash s
 </div>
 
 <details class="block" open>
-<summary>TUESDAY REVIEW</summary>
+<summary>REVIEW · SEPTEMBER 2026</summary>
 <div class="body">
-<p class="note">S&amp;P went nowhere. Nasdaq made a new high. Dow fell because banks were sold. Brent settled $99.25, fifth down day. 10-year stayed 4.96%.</p>
-<p class="note"><b>VOO</b> flat. <b>QQQ</b> +0.5%. <b>MSFT</b> slightly red. <b>JPM</b> about −3.2%. <b>XOM</b> followed oil. <b>GLD</b> $400.12, +0.44%.</p>
-<p class="note">Why: tanker-lane talk pushed oil down (helps Nasdaq, hurts XOM). Last week’s Fed hike is still in the banks. AI bid did not lift Microsoft much.</p>
-<p class="note">Also: diesel is still expensive. 2-year auction was soft. U.N. week only matters if oil or the 10-year move.</p>
+<table class="cal">
+<tr><th>SUN</th><th>MON</th><th>TUE</th><th>WED</th><th>THU</th><th>FRI</th><th>SAT</th></tr>
+<tr>
+<td class="empty"></td><td class="empty"></td>
+<td><button class="muted" disabled>1</button></td>
+<td><button class="muted" disabled>2</button></td>
+<td><button class="muted" disabled>3</button></td>
+<td><button class="muted" disabled>4</button></td>
+<td><button class="muted" disabled>5</button></td>
+</tr>
+<tr>
+<td><button class="muted" disabled>6</button></td>
+<td><button class="muted" disabled>7</button></td>
+<td><button class="muted" disabled>8</button></td>
+<td><button class="muted" disabled>9</button></td>
+<td><button class="muted" disabled>10</button></td>
+<td><button class="muted" disabled>11</button></td>
+<td><button class="muted" disabled>12</button></td>
+</tr>
+<tr>
+<td><button class="muted" disabled>13</button></td>
+<td><button class="muted" disabled>14</button></td>
+<td><button class="muted" disabled>15</button></td>
+<td><button class="muted" disabled>16</button></td>
+<td><button class="muted" disabled>17</button></td>
+<td><button class="muted" disabled>18</button></td>
+<td><button class="muted" disabled>19</button></td>
+</tr>
+<tr>
+<td><button class="muted" disabled>20</button></td>
+<td><button data-day="21" type="button">21</button></td>
+<td><button class="on" data-day="22" type="button">22</button></td>
+<td><button data-day="23" type="button">23</button></td>
+<td><button data-day="24" type="button">24</button></td>
+<td><button data-day="25" type="button">25</button></td>
+<td><button class="muted" disabled>26</button></td>
+</tr>
+<tr>
+<td><button class="muted" disabled>27</button></td>
+<td><button data-day="28" type="button">28</button></td>
+<td><button data-day="29" type="button">29</button></td>
+<td><button data-day="30" type="button">30</button></td>
+<td></td><td></td><td></td>
+</tr>
+</table>
+
+<div id="rev-22">
+<p class="note"><b>Tue Sep 22.</b> S&amp;P 7,764.64 flat. Nasdaq 27,244 +0.5% to a record. Dow −0.4%. Brent $99.25, fifth down day. 10-year 4.96% unchanged.</p>
+<p class="note"><b>VOO</b> flat. <b>QQQ</b> +0.5%. <b>MSFT</b> slightly red. <b>JPM</b> about −3.2%. <b>XOM</b> followed oil. <b>GLD</b> $400.12 +0.44%.</p>
+<p class="note">Why: tanker-lane talk pushed oil down. Last week’s Fed hike is still in the banks. AI bid did not lift Microsoft much. Diesel is still expensive. 2-year auction was soft.</p>
+<p class="note">Call: cash. Do not buy JPM on the drop. Do not chase QQQ at a record.</p>
+</div>
+<p class="note" id="rev-empty">No review for that date yet. First review is Tuesday the 22nd.</p>
 </div>
 </details>
 
 <details class="block" open>
-<summary>DRIVERS STILL LIVE</summary>
+<summary>WORLD NEWS</summary>
 <div class="body">
-<p class="note"><b>Iran war / oil shipping.</b> Lane-reopen talk and a Saudi pipeline test.</p>
-<p class="hits">HITS · XOM · GLD · VOO · QQQ</p>
-<p class="why">Can reverse on one headline. Do not chase the fifth down day in oil.</p>
-<p class="note"><b>Fed hike still in the tape.</b> 10-year near 5%. Another hike is possible.</p>
-<p class="hits">HITS · JPM · VOO · QQQ · MSFT</p>
-<p class="why">JPM −3% is not a buy until the rate story changes.</p>
+<p class="note">A story makes this list only if it can move a name on the watch list.</p>
+<p class="note"><b>Iran war and oil shipping.</b> Talk of reopening the main tanker lane. Saudi Arabia testing a pipeline that bypasses that lane. Oil fell five days.</p>
+<p class="hits">AFFECTS · XOM · GLD · VOO · QQQ</p>
+<p class="why">Lower oil can lift the market and hurt Exxon. Gold still prices war risk. One headline can reverse this.</p>
+<p class="note"><b>Fed already hiked. Another hike is possible.</b> 10-year yield near 5%.</p>
+<p class="hits">AFFECTS · JPM · VOO · QQQ · MSFT</p>
+<p class="why">Higher-for-longer rates hit banks first. JPM’s −3% is that story, not a bargain by itself.</p>
 </div>
 </details>
 
-<details class="block">
-<summary>THE SIX NAMES</summary>
+<details class="block" open>
+<summary>WATCH LIST</summary>
 <div class="body">
-<p class="note"><b>VOO</b> — S&amp;P 500. <b>QQQ</b> — Nasdaq 100. <b>MSFT</b> — Microsoft.</p>
-<p class="note"><b>JPM</b> — JPMorgan. <b>XOM</b> — Exxon. <b>GLD</b> — gold.</p>
+<p class="note"><b>VOO</b> — S&amp;P 500. The market.</p>
+<p class="note"><b>QQQ</b> — Nasdaq 100. Large growth.</p>
+<p class="note"><b>MSFT</b> — Microsoft.</p>
+<p class="note"><b>JPM</b> — JPMorgan. Banks / Fed.</p>
+<p class="note"><b>XOM</b> — Exxon. Oil / war.</p>
+<p class="note"><b>GLD</b> — gold. Fear / geopolitics.</p>
 </div>
 </details>
 
 <details class="block">
 <summary>OUR ACCOUNT · $1,000</summary>
 <div class="body">
-<p class="note">Start $1,000. Cash $1,000. Positions none. Total $1,000.</p>
+<p class="note">Start $1,000. Cash $1,000. Positions none.</p>
 <p class="note">Max $300 in one name. Max two names. No day trades. No options. No crypto. No margin.</p>
-<p class="note">A buy needs a sentence in Decision first. Then send the Robinhood fill price and dollars.</p>
+<p class="note">A buy needs a sentence in Decision first. Then send the Robinhood fill.</p>
 </div>
 </details>
 
 <p class="disclaimer">Not advice. $1,000 can fall. Delayed closes.</p>
 </div>
+<script>
+const empty = document.getElementById('rev-empty');
+const tue = document.getElementById('rev-22');
+document.querySelectorAll('.cal button[data-day]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.cal button[data-day]').forEach(b => b.classList.remove('on'));
+    btn.classList.add('on');
+    const has = btn.getAttribute('data-day') === '22';
+    tue.classList.toggle('hide', !has);
+    empty.classList.toggle('show', !has);
+  });
+});
+</script>
 </body></html>
