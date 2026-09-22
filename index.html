@@ -3,7 +3,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>The Tape</title>
-<link rel="stylesheet" href="tape.css?v=14"/>
+<link rel="stylesheet" href="tape.css?v=15"/>
 <style>
 .meaning{color:#93a3b5;font-size:12px;font-weight:600;display:block;margin-top:4px}
 .next{background:#121820;border:1px solid #2a3644;border-radius:12px;padding:14px 16px;margin:16px 0}
@@ -25,10 +25,11 @@
 <body>
 <header>
 <div class="brand">THE TAPE</div>
-<div class="sub">ONE PAGE</div>
+<div class="sub">WORLD NEWS · MARKETS · $1,000</div>
 <div class="card-date">TUESDAY SEP 22, 2026 · AFTER CLOSE</div>
 </header>
 <div class="wrap">
+<p class="note">Two jobs, same weight: know what is happening in the world, and try to grow $1,000. A story can belong here even if it hits none of the six names.</p>
 <div class="bank">
 <div><b>S&amp;P 500</b><span>7,764.64</span><span class="meaning">flat</span></div>
 <div><b>NASDAQ</b><span>27,244</span><span class="meaning">+0.5% record</span></div>
@@ -49,8 +50,7 @@ No buy. More news does not mean more trades. Cash stays $1,000.</div>
 <tr><td><button class="muted" disabled>27</button></td><td><button data-day="28" type="button">28</button></td><td><button data-day="29" type="button">29</button></td><td><button data-day="30" type="button">30</button></td><td></td><td></td><td></td></tr>
 </table>
 <div id="rev-22">
-<p class="note"><b>Tue Sep 22.</b> S&amp;P 7,764.64 flat. Nasdaq 27,244 +0.5% record. Dow −0.4%. Brent $99.25. 10-year 4.96%.</p>
-<p class="note"><b>VOO</b> flat. <b>QQQ</b> +0.5%. <b>MSFT</b> slightly red. <b>JPM</b> −3.2%. <b>XOM</b> followed oil. <b>GLD</b> +0.44%.</p>
+<p class="note"><b>Tue Sep 22.</b> S&amp;P flat. Nasdaq record. Banks sold. Oil down five days. World brief is seven stories below.</p>
 <p class="note">Call: cash.</p>
 </div>
 <p class="note" id="rev-empty">No review for that date yet.</p>
@@ -59,42 +59,37 @@ No buy. More news does not mean more trades. Cash stays $1,000.</div>
 <summary>WORLD NEWS</summary>
 <div class="body">
 <p class="note">The world first. Then which watch-list names, if any, can feel it.</p>
-<p class="note"><b>1. Iran war — tanker lane talk.</b> Iran said the main oil shipping lane could reopen in about a week if the U.S. eases pressure. Saudi Arabia is testing a pipeline that bypasses that lane. A tanker was hit in the lane this week. Crude has fallen five days, back under $100, still far above ~$72 from before the war.</p>
+<p class="note"><b>1. Iran war — tanker lane talk.</b> Lane-reopen talk, Saudi pipeline test, a tanker hit this week. Crude under $100 after five down days, still far above pre-war ~$72.</p>
 <p class="hits">AFFECTS · XOM · GLD · VOO · QQQ</p>
-<p class="why">Learn: much of the world’s oil leaves the Persian Gulf through one narrow waterway. Close it and diesel and inflation jump. Talk of opening it and oil falls — until the next strike.</p>
-<p class="note"><b>2. Ukraine hit another Russian oil refinery.</b> Russia struck Ukrainian cities overnight. Diesel is expensive because of this war and the Iran war. Trump is meeting Zelenskyy and talking about an energy ceasefire.</p>
+<p class="why">Learn: one waterway can move diesel and inflation. Talk of opening it drops oil until the next strike.</p>
+<p class="note"><b>2. Ukraine hit another Russian oil refinery.</b> Russia struck Ukrainian cities. Diesel is expensive from this war and the Iran war. Energy ceasefire talk in New York.</p>
 <p class="hits">AFFECTS · XOM · VOO · GLD</p>
-<p class="why">Learn: crude and diesel are not the same product. Cheaper crude can sit next to painful diesel if refineries are offline. “Oil is down” does not mean inflation is done.</p>
-<p class="note"><b>3. The Fed raised rates last week. Another hike is still possible.</b> 10-year yield 4.96%. Banks sold. JPM about −3%.</p>
+<p class="why">Learn: crude and diesel are not the same. Cheap crude plus smashed refineries can still mean expensive diesel.</p>
+<p class="note"><b>3. The Fed hiked last week. Another hike is possible.</b> 10-year 4.96%. JPM about −3%.</p>
 <p class="hits">AFFECTS · JPM · VOO · QQQ · MSFT</p>
-<p class="why">Learn: the Fed sets the short-term rate. The 10-year is what the bond market thinks. A hike already done can keep hitting bank stocks days later.</p>
-<p class="note"><b>4. U.N. week in New York. Xi due in the U.S. later this week.</b> Trump addressed the General Assembly and is set to see leaders from the U.K., Japan, Ukraine, Venezuela, and the Gulf.</p>
+<p class="why">Learn: Fed sets the short rate. The 10-year is the market’s vote. A done hike can still hit banks days later.</p>
+<p class="note"><b>4. U.N. week. Xi due in the U.S. later this week.</b></p>
 <p class="hits">AFFECTS · none of the six yet</p>
-<p class="why">Learn: diplomacy is a calendar event. Markets reprice after a sentence changes oil or yields, not after the motorcade arrives.</p>
-<p class="note"><b>5. U.S., Denmark, and Greenland signed an Arctic defense deal.</b> Trump said two major U.S. bases. Greenland stays under Danish control.</p>
+<p class="why">Learn: a motorcade is not a price.</p>
+<p class="note"><b>5. U.S.–Denmark–Greenland Arctic defense deal.</b> Two major U.S. bases. Greenland stays Danish.</p>
 <p class="hits">AFFECTS · GLD · none of the others yet</p>
-<p class="why">Learn: the Arctic is becoming a military lane. Gold sometimes ticks when the world arms up. Weak, slow link — not a trade today.</p>
-<p class="note"><b>6. Typhoon Dujuan hit eastern Japan.</b> At least six dead, landslides near Tokyo, tens of thousands without power, hundreds of flights canceled.</p>
+<p class="why">Learn: the Arctic is becoming a military lane. Weak gold link only.</p>
+<p class="note"><b>6. Typhoon Dujuan, eastern Japan.</b> Deaths, landslides, power outages, canceled flights.</p>
 <p class="hits">AFFECTS · none of the six</p>
-<p class="why">Learn: a storm can shut airports and still not move the S&amp;P. Worth knowing. Not a VOO buy or sell.</p>
-<p class="note"><b>7. Hurricane Polo exploded to Category 5 off Mexico’s Pacific coast.</b> Mostly expected to stay offshore. The Atlantic has not produced a hurricane this season, tied to a strong El Niño.</p>
+<p class="why">Learn: airports can close and the S&amp;P can ignore it. Still worth knowing.</p>
+<p class="note"><b>7. Hurricane Polo, Category 5 off Mexico.</b> Quiet Atlantic season, strong El Niño.</p>
 <p class="hits">AFFECTS · none of the six</p>
-<p class="why">Learn: two oceans, two seasons. El Niño tends to quiet the Atlantic and juice the eastern Pacific. Do not invent a stock story that is not there.</p>
+<p class="why">Learn: two oceans, two seasons. Do not invent a stock story that is not there.</p>
 </div></details>
 <details class="block" open>
 <summary>WATCH LIST</summary>
 <div class="body">
-<p class="note"><b>VOO</b> — S&amp;P 500.</p>
-<p class="note"><b>QQQ</b> — Nasdaq 100.</p>
-<p class="note"><b>MSFT</b> — Microsoft.</p>
-<p class="note"><b>JPM</b> — JPMorgan.</p>
-<p class="note"><b>XOM</b> — Exxon.</p>
-<p class="note"><b>GLD</b> — gold.</p>
+<p class="note"><b>VOO</b> S&amp;P 500. <b>QQQ</b> Nasdaq 100. <b>MSFT</b> Microsoft. <b>JPM</b> JPMorgan. <b>XOM</b> Exxon. <b>GLD</b> gold.</p>
 </div></details>
 <details class="block">
 <summary>OUR ACCOUNT · $1,000</summary>
 <div class="body">
-<p class="note">Start $1,000. Cash $1,000. Positions none. Max $300 / two names. No day trades, options, crypto, or margin.</p>
+<p class="note">Cash $1,000. Positions none. Max $300 / two names. No day trades, options, crypto, or margin.</p>
 </div></details>
 <p class="disclaimer">Not advice. $1,000 can fall. Delayed closes.</p>
 </div>
