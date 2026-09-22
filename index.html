@@ -3,7 +3,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>The Tape</title>
-<link rel="stylesheet" href="tape.css?v=16"/>
+<link rel="stylesheet" href="tape.css?v=17"/>
 <style>
 .meaning{color:#93a3b5;font-size:12px;font-weight:600;display:block;margin-top:4px}
 .next{background:#121820;border:1px solid #2a3644;border-radius:12px;padding:14px 16px;margin:16px 0}
@@ -16,19 +16,21 @@
 .cal button{background:#121820;border:1px solid #2a3644;color:#e8eef6;width:36px;height:36px;border-radius:8px;font-weight:800;cursor:pointer}
 .cal button.on{background:#e8b423;color:#111;border-color:#e8b423}
 .cal button.muted{opacity:.35;cursor:default}
-#rev-empty{display:none}#rev-empty.show{display:block}#rev-22.hide{display:none}
+#rev-empty{display:none}
+#rev-empty.show{display:block}
+#rev-22.hide{display:none}
 details.story{border:1px solid #2a3644;border-radius:10px;margin:8px 0;background:#121820}
 details.story>summary{list-style:none;cursor:pointer;padding:12px 14px;font-weight:800;color:#e8eef6;line-height:1.35}
 details.story>summary::-webkit-details-marker{display:none}
 details.story>summary:after{content:" +";color:#e8b423;float:right}
-details.story[open]>summary:after{content:" \2212"}
+details.story[open]>summary:after{content:" -";color:#e8b423;float:right}
 details.story .pad{padding:0 14px 14px}
 </style></head>
 <body>
 <header>
 <div class="brand">THE TAPE</div>
-<div class="sub">WORLD NEWS \u00b7 MARKETS \u00b7 $1,000</div>
-<div class="card-date">TUESDAY SEP 22, 2026 \u00b7 AFTER CLOSE</div>
+<div class="sub">WORLD NEWS | MARKETS | $1,000</div>
+<div class="card-date">TUESDAY SEP 22, 2026 | AFTER CLOSE</div>
 </header>
 <div class="wrap">
 <p class="note">Two jobs, same weight: know the world, and try to grow $1,000. Tap a story for the full brief.</p>
@@ -41,7 +43,7 @@ details.story .pad{padding:0 14px 14px}
 <div class="next"><b>DECISION</b>
 No buy. Reading more is not trading more. Cash stays $1,000.</div>
 <details class="block" open>
-<summary>REVIEW \u00b7 SEPTEMBER 2026</summary>
+<summary>REVIEW | SEPTEMBER 2026</summary>
 <div class="body">
 <table class="cal">
 <tr><th>SUN</th><th>MON</th><th>TUE</th><th>WED</th><th>THU</th><th>FRI</th><th>SAT</th></tr>
@@ -55,53 +57,52 @@ No buy. Reading more is not trading more. Cash stays $1,000.</div>
 <p class="note" id="rev-empty">No review for that date yet.</p>
 </div></details>
 <details class="block" open>
-<summary>WORLD NEWS \u00b7 TAP ANY STORY</summary>
+<summary>WORLD NEWS | TAP A STORY</summary>
 <div class="body">
 
-<details class="story"><summary>1. Iran war \u2014 tanker lane may reopen<span class="hits">AFFECTS \u00b7 XOM \u00b7 GLD \u00b7 VOO \u00b7 QQQ</span></summary>
+<details class="story"><summary>1. Iran war - tanker lane may reopen<span class="hits">AFFECTS | XOM | GLD | VOO | QQQ</span></summary>
 <div class="pad">
-<p class="note">War about six months old. Oil was ~$72 before it. Last week Brent near $110. Tuesday settle $99.25, fifth down day, after a dip under $98.</p>
-<p class="note">Iran said Hormuz could reopen in about seven days if the U.S. eases military pressure and lifts a port blockade. Hormuz is the narrow exit from the Persian Gulf. A large share of seaborne oil has to pass through it.</p>
-<p class="note">Saudi Arabia is testing the East-West Pipeline to the Red Sea (Yanbu), a bypass after Houthi damage this month. A tanker was hit in Hormuz on Monday. Trump defended the war at the U.N. Markets sold oil on the reopen talk. The war is not over.</p>
-<p class="why">Learn: oil has a price and a route. Close the lane and diesel, shipping, and inflation jump. Talk of opening it and traders sell first. Exxon follows the barrel. Gold follows war risk. VOO/QQQ follow inflation fear.</p>
+<p class="note">War about six months old. Oil was about $72 before it. Last week Brent near $110. Tuesday settle $99.25, fifth down day.</p>
+<p class="note">Iran said Hormuz could reopen in about seven days if the U.S. eases pressure. Hormuz is the narrow exit from the Persian Gulf. A large share of seaborne oil has to pass through it.</p>
+<p class="note">Saudi Arabia is testing the East-West Pipeline to the Red Sea as a bypass. A tanker was hit in Hormuz on Monday. The war is not over.</p>
+<p class="why">Learn: oil has a price and a route. Close the lane and diesel and inflation jump.</p>
 </div></details>
 
-<details class="story"><summary>2. Ukraine hit another Russian refinery<span class="hits">AFFECTS \u00b7 XOM \u00b7 VOO \u00b7 GLD</span></summary>
+<details class="story"><summary>2. Ukraine hit another Russian refinery<span class="hits">AFFECTS | XOM | VOO | GLD</span></summary>
 <div class="pad">
-<p class="note">Year five. Front lines barely move. Russia struck at least four Ukrainian regions overnight. Ukraine damaged another Russian refinery, after a large weekend strike near Moscow.</p>
-<p class="note">Refineries turn crude into diesel and jet fuel. Smash them and crude can fall while diesel stays scarce. U.S. diesel was recently marked near $6.53 even as crude fell five days. Trump wants an energy ceasefire talk with Zelenskyy in New York.</p>
-<p class="why">Learn: crude is the raw barrel. Diesel is the refined product trucks burn. “Oil is down” is not “inflation is done.”</p>
+<p class="note">Year five. Russia struck Ukrainian cities overnight. Ukraine damaged another Russian refinery after a weekend strike near Moscow.</p>
+<p class="note">Refineries turn crude into diesel. Smash them and crude can fall while diesel stays scarce. U.S. diesel recently near $6.53 even as crude fell five days.</p>
+<p class="why">Learn: crude is the raw barrel. Diesel is what trucks burn. Oil is down is not inflation is done.</p>
 </div></details>
 
-<details class="story"><summary>3. Fed already hiked \u2014 banks sold<span class="hits">AFFECTS \u00b7 JPM \u00b7 VOO \u00b7 QQQ \u00b7 MSFT</span></summary>
+<details class="story"><summary>3. Fed already hiked - banks sold<span class="hits">AFFECTS | JPM | VOO | QQQ | MSFT</span></summary>
 <div class="pad">
-<p class="note">First Fed hike in three years last week. Another hike in October is still on the table. 10-year yield 4.96% Tuesday, unchanged, after crossing 5% last week. 2-year auction was soft.</p>
-<p class="note">JPM fell about 3.2% and helped drag the Dow. Financials were the worst sector. Banks live on the gap between short rates and long rates. That gap is under pressure. Fed speakers kept pointing at services inflation, not just energy.</p>
-<p class="why">Learn: the Fed sets the overnight rate. The 10-year is the market’s vote. A hike already done can still hit bank stocks days later.</p>
+<p class="note">First Fed hike in three years last week. Another October hike is still possible. 10-year yield 4.96%. JPM fell about 3.2%. Financials were the worst sector.</p>
+<p class="why">Learn: the Fed sets the overnight rate. The 10-year is the market vote. A hike already done can still hit banks days later.</p>
 </div></details>
 
-<details class="story"><summary>4. U.N. week \u2014 Xi due later this week<span class="hits">AFFECTS \u00b7 none of the six yet</span></summary>
+<details class="story"><summary>4. U.N. week - Xi due later this week<span class="hits">AFFECTS | none of the six yet</span></summary>
 <div class="pad">
-<p class="note">81st U.N. General Assembly. Trump spoke, then a stack of meetings: U.K., Japan, Ukraine, Venezuela, Denmark, Greenland, Gulf states. Xi Jinping is due in the U.S. Sep 23–25. Topics in the air: trade, tariffs, AI.</p>
-<p class="why">Learn: a summit is a calendar box. Markets move when a sentence changes oil, rates, or war risk. Until then, AFFECTS none.</p>
+<p class="note">Trump spoke at the U.N. and stacked meetings (U.K., Japan, Ukraine, Venezuela, Denmark, Greenland, Gulf). Xi is due in the U.S. Sep 23-25.</p>
+<p class="why">Learn: a summit is a calendar box. Markets move when oil or yields change, not when the motorcade arrives.</p>
 </div></details>
 
-<details class="story"><summary>5. Greenland \u2014 U.S. to build two bases<span class="hits">AFFECTS \u00b7 GLD \u00b7 none of the others yet</span></summary>
+<details class="story"><summary>5. Greenland - U.S. to build two bases<span class="hits">AFFECTS | GLD | none of the others yet</span></summary>
 <div class="pad">
-<p class="note">U.S., Denmark, and Greenland signed an update to the 1951 defense pact in New York. Trump said two “very major” bases and a larger presence immediately. Greenland stays Danish. Existing U.S. operations there already cover missile warning and space surveillance for NATO.</p>
-<p class="why">Learn: the Arctic is becoming a military lane (routes, missiles, minerals). Decade map, not Tuesday trade. Weak gold link only.</p>
+<p class="note">U.S., Denmark, and Greenland signed an update to the 1951 defense pact. Trump said two major bases. Greenland stays Danish.</p>
+<p class="why">Learn: the Arctic is becoming a military lane. Decade map, not a Tuesday trade.</p>
 </div></details>
 
-<details class="story"><summary>6. Typhoon Dujuan \u2014 Japan<span class="hits">AFFECTS \u00b7 none of the six</span></summary>
+<details class="story"><summary>6. Typhoon Dujuan - Japan<span class="hits">AFFECTS | none of the six</span></summary>
 <div class="pad">
-<p class="note">Six dead, about six missing, 20+ injured. Landslides in Chiba and Kanagawa near Tokyo. 45,000+ households without power. Oshima recorded 832 mm of rain in 48 hours, more than double a normal September. Level-5 landslide warnings. 275+ flight cancellations at Haneda and Narita. Rail and bullet-train disruptions. Storm now weakening over the Pacific.</p>
-<p class="why">Learn: hundreds of flights can cancel and the S&amp;P can ignore it. Still worth knowing. Not a VOO trade.</p>
+<p class="note">Six dead, about six missing. Landslides near Tokyo. 45,000+ households without power. 275+ flights canceled. Storm weakening over the Pacific.</p>
+<p class="why">Learn: airports can close and the S&amp;P can ignore it. Still worth knowing.</p>
 </div></details>
 
-<details class="story"><summary>7. Hurricane Polo \u2014 Cat 5 off Mexico<span class="hits">AFFECTS \u00b7 none of the six</span></summary>
+<details class="story"><summary>7. Hurricane Polo - Cat 5 off Mexico<span class="hits">AFFECTS | none of the six</span></summary>
 <div class="pad">
-<p class="note">Tropical storm to Category 5 in under 24 hours off Mexico’s Pacific coast. Core likely stays offshore; rain and landslide risk for Guerrero, Oaxaca, Michoacán. The Atlantic has produced no hurricane this season, a long quiet streak tied to a strong El Niño, which tends to shear the Atlantic and feed the eastern Pacific.</p>
-<p class="why">Learn: two oceans, two seasons, one climate pattern leaning on both. Do not invent a QQQ trade.</p>
+<p class="note">Storm to Category 5 in under 24 hours off Mexico Pacific coast. Core likely stays offshore. Atlantic has had no hurricane this season (El Nino pattern).</p>
+<p class="why">Learn: two oceans, two seasons. Do not invent a stock trade.</p>
 </div></details>
 
 </div></details>
@@ -109,9 +110,9 @@ No buy. Reading more is not trading more. Cash stays $1,000.</div>
 <summary>WATCH LIST</summary>
 <div class="body"><p class="note"><b>VOO</b> S&amp;P 500. <b>QQQ</b> Nasdaq 100. <b>MSFT</b> Microsoft. <b>JPM</b> JPMorgan. <b>XOM</b> Exxon. <b>GLD</b> gold.</p></div></details>
 <details class="block">
-<summary>OUR ACCOUNT \u00b7 $1,000</summary>
-<div class="body"><p class="note">Cash $1,000. Positions none. Max $300 / two names. No day trades, options, crypto, or margin.</p></div></details>
-<p class="disclaimer">Not advice. $1,000 can fall. Delayed closes. Briefs are for staying current, not a buy list.</p>
+<summary>OUR ACCOUNT | $1,000</summary>
+<div class="body"><p class="note">Cash $1,000. Positions none. Max $300 per name, two names max. No day trades, options, crypto, or margin.</p></div></details>
+<p class="disclaimer">Not advice. $1,000 can fall. Delayed closes.</p>
 </div>
 <script>
 const empty=document.getElementById('rev-empty');
