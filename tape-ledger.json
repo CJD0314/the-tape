@@ -1,0 +1,8 @@
+{
+  "start": 10000,
+  "cash": 10000,
+  "mark": 10000,
+  "as_of": "2026-09-22",
+  "note": "Cash is a legal position. SETTLED rows never leave. Never write fewer tickets than you read.",
+  "tickets": []
+}
